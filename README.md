@@ -30,6 +30,9 @@ Benutzer-Input → Geocoding API → Koordinaten → Weather API → Temperatur
 ```
 
 ## 🚀 Verwendung
+### im browser 
+
+matthiaskahlert.github.io/weather_app/ 
 
 ### Lokal starten:
 
