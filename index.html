@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Echtzeit-Temperaturabfrage für Städte weltweit mit Open-Meteo API">
+    <meta name="keywords" content="Wetter, Temperatur, API, JavaScript">
+    <title>Weather App - Temperaturabfrage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+    <main class="container">
+        <header class="app-header">
+            <h1>🌤️ Weather App</h1>
+            <p class="subtitle">Aktuelle Temperatur weltweit abrufen</p>
+        </header>
+
+        <section class="search-section">
+            <form id="weatherForm" class="weather-form" novalidate>
+                <div class="input-group">
+                    <label for="cityInput" class="visually-hidden">Stadt eingeben</label>
+                    <input 
+                        id="cityInput" 
+                        type="text" 
+                        placeholder="🔍 Stadt eingeben (z.B. Berlin, Paris, Tokyo)"
+                        aria-label="Stadt für Wetterabfrage"
+                        autocomplete="off"
+                        autofocus
+                    >
+                    <button 
+                        id="getTempButton" 
+                        type="submit"
+                        class="btn btn-primary"
+                        aria-label="Temperatur abrufen"
+                    >
+                        🌡️ Temperatur abrufen
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!--  Ergebnis mit Status-Feedback -->
+        <section class="result-section">
+            <!-- Loading Spinner -->
+            <div id="loading" class="loading hidden" aria-live="polite">
+                <div class="spinner"></div>
+                <p>Wetterdaten werden geladen...</p>
+            </div>
+
+            <!-- Ergebnis -->
+            <div id="result" class="result" role="status" aria-live="polite"></div>
+
+            <!-- Fehler -->
+            <div id="error" class="error hidden" role="alert"></div>
+        </section>
+
+       
+        <section class="info-section">
+            <details>
+                <summary>ℹ️ Unterstützte Städte</summary>
+                <p>Die App unterstützt Städte weltweit. Probiere: Berlin, London, New York, Tokyo, Sydney, Paris, Rom, etc.</p>
+            </details>
+        </section>
+
+        <!--  Footer mit API-Credit -->
+        <footer class="app-footer">
+            <p>
+                <small>
+                    Powered by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo API</a>
+                    | 
+                    <a href="https://github.com/matthiaskahlert" target="_blank" rel="noopener">GitHub</a>
+                </small>
+            </p>
+        </footer>
+    </main>
+</html>
