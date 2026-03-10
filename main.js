@@ -303,10 +303,10 @@ async function handleRequest(event) {
 
         // Ergebnis anzeigen
         UI.showResult(data.city, data.temperature, data.country);
+        UI.showMap(data);
 
     } catch (error) {
         UI.showError(error.message);
-        UI.showMap(data);
     }
 }
 
