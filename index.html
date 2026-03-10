@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
+<body>
     <main class="container">
         <header class="app-header">
             <div class="header-title">
@@ -56,6 +57,18 @@
 
             <!-- Fehler -->
             <div id="error" class="error hidden" role="alert"></div>
+
+            <!-- Karte zur Verifizierung des Orts -->
+            <div id="mapWrapper" class="map-wrapper hidden" aria-live="polite">
+                <p id="locationMeta" class="location-meta"></p>
+                <iframe
+                    id="mapFrame"
+                    class="map-frame"
+                    title="Kartenansicht des gefundenen Orts"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
         </section>
 
        
@@ -77,4 +90,5 @@
             </p>
         </footer>
     </main>
+</body>
 </html>
