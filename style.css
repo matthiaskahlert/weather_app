@@ -252,6 +252,26 @@ input[type="text"]::placeholder {
     animation: shake 0.5s ease-in-out;
 }
 
+.map-wrapper {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: #f8fbff;
+}
+
+.location-meta {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.map-frame {
+    width: 100%;
+    height: 260px;
+    border: 0;
+    border-radius: 10px;
+}
 @keyframes slideIn {
     from { opacity: 0; transform: translateX(-20px); }
     to { opacity: 1; transform: translateX(0); }
@@ -359,6 +379,10 @@ details[open] summary {
     .error {
         background: linear-gradient(135deg, #621b16 0%, #8b1e1e 100%);
         color: #ffcccc;
+    }
+   
+    .map-wrapper {
+        background: #0f3460;
     }
 }
 
