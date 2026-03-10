@@ -24,7 +24,10 @@ const DOM = {
     button: document.getElementById('getTempButton'),
     result: document.getElementById('result'),
     error: document.getElementById('error'),
-    loading: document.getElementById('loading')
+    loading: document.getElementById('loading'),
+    mapWrapper: document.getElementById('mapWrapper'),
+    mapFrame: document.getElementById('mapFrame'),
+    locationMeta: document.getElementById('locationMeta')
 };
 
 // ============================================
